@@ -281,12 +281,12 @@ export default function Home({ articles }) {
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/samantha-orciuoli"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="www.linkedin.com/in/samantha-orciuoli-00077621b"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
