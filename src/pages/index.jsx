@@ -12,7 +12,7 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import image1 from '@/images/photos/image-1.jpg'
+import logoPython from '@/images/photos/python.png' //replaces image1
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
@@ -225,7 +225,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {[logoPython, image2, image3, image4, image5].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -251,7 +251,7 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Samantha Orciuoli - Software designer, founder, and amateur astronaut
+          Samantha Orciuoli - Software engineer, developer, and student
         </title>
         <meta
           name="description"
@@ -264,14 +264,14 @@ export default function Home({ articles }) {
             Samantha Orciuoli, software engineer, developer, and student.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
+            I’m Samantha, a software engineer and developer based in New Jersey.
+            I’m the founder and CEO of Planetaria, where we develop
             technologies that empower regular people to explore space on their
             own terms.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com"
+              href="https://twitter.com/sammychules"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
