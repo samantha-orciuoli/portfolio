@@ -286,7 +286,7 @@ export default function Home({ articles }) {
               icon={GitHubIcon}
             />
             <SocialLink
-              href="www.linkedin.com/in/samantha-orciuoli-00077621b"
+              href="https://www.linkedin.com/in/samantha-orciuoli"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
