@@ -64,7 +64,7 @@ export default function Education() {
                 />
                   <Appearance
                       href="https://coursera.org/share/46f100c289913ea8256cbd239c5779dc"
-                      title="Python for Everybody - University of Michigan"
+                      title="Python for Everybody - University of Michigan on Coursera"
                       description="A 32 week course covering python to access web data, python with databases, and python data structures. I also completed a capstone project on the honors track to retrieve, process, and visualize a dataset using python."
                       event="Completed August 29, 2022"
                       cta="View Certificate"
