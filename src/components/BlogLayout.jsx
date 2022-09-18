@@ -18,7 +18,7 @@ function ArrowLeftIcon(props) {
   )
 }
 
-export function ArticleLayout({
+export function BlogLayout({
   children,
   meta,
   isRssFeed = false,

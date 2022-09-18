@@ -21,7 +21,7 @@ import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllArticles } from '@/lib/getAllArticles'
+import { getAllBlogs } from '@/lib/getAllBlogs'
 import { formatDate } from '@/lib/formatDate'
 
 function MailIcon(props) {
@@ -83,17 +83,17 @@ function ArrowDownIcon(props) {
   )
 }
 
-function Article({ article }) {
+function Blog({ blog }) {
   return (
-    <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
+    <Card as="blog">
+      <Card.Title href={`/blogs/${blog.slug}`}>
+        {blog.title}
       </Card.Title>
-      <Card.Eyebrow as="time" dateTime={article.date} decorate>
-        {formatDate(article.date)}
+      <Card.Eyebrow as="time" dateTime={blog.date} decorate>
+        {formatDate(blog.date)}
       </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
+      <Card.Description>{blog.description}</Card.Description>
+      <Card.Cta>Read blog</Card.Cta>
     </Card>
   )
 }
@@ -245,7 +245,7 @@ function Photos() {
   )
 }
 
-export default function Home({ articles }) {
+export default function Home({ blogs }) {
   return (
     <>
       <Head>
@@ -291,8 +291,8 @@ export default function Home({ articles }) {
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
+            {blogs.map((blog) => (
+              <Blog key={blog.slug} blog={blog} />
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
@@ -312,7 +312,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      articles: (await getAllArticles())
+      blogs: (await getAllBlogs())
         .slice(0, 4)
         .map(({ component, ...meta }) => meta),
     },
