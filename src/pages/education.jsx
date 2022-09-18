@@ -36,48 +36,39 @@ export default function Education() {
         />
       </Head>
       <SimpleLayout
-        title="I’ve spoken at events all around the world and been interviewed for many podcasts."
-        intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions."
+        title="I’m always on a quest for technical knowledge."
+        intro="I'm eager to learn all things technology. Apart from traditional schooling, I'm big on self-learning outside the classroom, and look to expand my knowledge everyday."
       >
         <div className="space-y-20">
-          <EducationSection title="Conferences">
-            <Appearance
-              href="#"
-              title="In space, no one can watch you stream — until now"
-              description="A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
-              event="SysConf 2021"
-              cta="Watch video"
-            />
-            <Appearance
-              href="#"
-              title="Lessons learned from our first product recall"
-              description="They say that if you’re not embarassed by your first version, you’re doing it wrong. Well when you’re selling DIY space shuttle kits it turns out it’s a bit more complicated."
-              event="Business of Startups 2020"
-              cta="Watch video"
-            />
-          </EducationSection>
-          <EducationSection title="Podcasts">
-            <Appearance
-              href="#"
-              title="Using design as a competitive advantage"
-              description="How we used world-class visual design to attract a great team, win over customers, and get more press for Planetaria."
-              event="Encoding Design, July 2022"
-              cta="Listen to podcast"
-            />
-            <Appearance
-              href="#"
-              title="Bootstrapping an aerospace company to $17M ARR"
-              description="The story of how we built one of the most promising space startups in the world without taking any capital from investors."
-              event="The Escape Velocity Show, March 2022"
-              cta="Listen to podcast"
-            />
-            <Appearance
-              href="#"
-              title="Programming your company operating system"
-              description="On the importance of creating systems and processes for running your business so that everyone on the team knows how to make the right decision no matter the situation."
-              event="How They Work Radio, September 2021"
-              cta="Listen to podcast"
-            />
+            <EducationSection title="Degrees">
+                <Appearance
+                    title="Bachelor of Science Degree in Computer Science with a Minor in Business Administration"
+                    description="From Rutgers University, New Brunswick"
+                    event="May 2023"
+                />
+            </EducationSection>
+            <EducationSection title="Certificates">
+                <Appearance
+                  href="https://confirm.udacity.com/ZHGCAMPW"
+                  title="AI Programming with Python Nanodegree - Udacity"
+                  description="A 3 month course exploring Python, NumPy, pandas, Matplotlib, PyTorch, Calculus, and Linear Algebra in order to build neural networks."
+                  event="Completed September 05, 2021"
+                  cta="View Certificate"
+                />
+                <Appearance
+                  href="https://confirm.udacity.com/WDHJR72W"
+                  title="Intermediate Python Nanodegree - Udacity"
+                  description="A 2 month course covering advanced python topics and large codebases with libraries.."
+                  event="Completed July 14, 2022"
+                  cta="View Certificate"
+                />
+                  <Appearance
+                      href="https://coursera.org/share/46f100c289913ea8256cbd239c5779dc"
+                      title="Python for Everybody - University of Michigan"
+                      description="A 32 week course covering python to access web data, python with databases, and python data structures. I also completed a capstone project on the honors track to retrieve, process, and visualize a dataset using python."
+                      event="Completed August 29, 2022"
+                      cta="View Certificate"
+                />
           </EducationSection>
         </div>
       </SimpleLayout>
