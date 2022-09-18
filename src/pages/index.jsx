@@ -12,11 +12,11 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import logoPython from '@/images/photos/python.png' //replaces image1
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import logoPython from '@/images/photos/python.png'
+import logoNextjs from '@/images/photos/nextjs.png'
+import logoGoogleai from '@/images/photos/googleai.png'
+import logoVercel from '@/images/photos/vercel.png'
+import logoJavascript from '@/images/photos/javascript.png'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
@@ -225,7 +225,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[logoPython, image2, image3, image4, image5].map((image, imageIndex) => (
+        {[logoPython, logoNextjs, logoGoogleai, logoVercel, logoJavascript].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
