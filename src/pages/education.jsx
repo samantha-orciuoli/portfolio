@@ -42,9 +42,11 @@ export default function Education() {
         <div className="space-y-20">
             <EducationSection title="Degrees">
                 <Appearance
+                    href="https://www.cs.rutgers.edu/academics/undergraduate/cs-degrees/b-s-degree"
                     title="Bachelor of Science Degree in Computer Science with a Minor in Business Administration"
                     description="From Rutgers University, New Brunswick"
                     event="May 2023"
+                    cta="View Degree Requirements"
                 />
             </EducationSection>
             <EducationSection title="Certificates">
