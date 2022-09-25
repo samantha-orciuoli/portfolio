@@ -138,6 +138,7 @@ function MessageMe() {
                 <span className="mt-2 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">Your message: </span>
                 <textarea
                     name="message"
+                    id="message"
                     placeholder="Message"
                     aria-label="Message"
                     required
