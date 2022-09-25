@@ -23,8 +23,7 @@ import logoStarbucks from '@/images/logos/starbucks.svg'
 import {generateRssFeed} from '@/lib/generateRssFeed'
 import {getAllBlogs} from '@/lib/getAllBlogs'
 import {formatDate} from '@/lib/formatDate'
-import {useForm} from "@formspree/react";
-
+import {useForm, ValidationError} from "@formspree/react";
 
 function MailIcon(props) {
     return (
@@ -110,8 +109,11 @@ function SocialLink({icon: Icon, ...props}) {
 }
 
 function MessageMe() {
-    const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_CONTACT_FORM)
-
+    const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_CONTACT_FORM);
+    if (state.succeeded) {
+        return <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+            Thank you for reaching out!</p>;
+    }
     return (
         <form
             onSubmit={handleSubmit}
@@ -127,24 +129,36 @@ function MessageMe() {
             <label>
                 <span className="mt-2 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">Your email: </span>
                 <input
-                    type="email" name="email"
+                    id="email"
+                    type="email"
+                    name="email"
                     placeholder="Email address"
                     aria-label="Email address"
                     required
                     className="mt-2 min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4
               focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"/>
             </label>
+            <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+            />
             <label>
                 <span className="mt-2 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">Your message: </span>
                 <textarea
-                    name="message"
                     id="message"
+                    name="message"
                     placeholder="Message"
                     aria-label="Message"
                     required
                     className="mt-2 min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none
               focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"/>
             </label>
+            <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+            />
             <div>
                 <Button
                     type="submit"
@@ -153,6 +167,9 @@ function MessageMe() {
                 >
                     Send
                 </Button>
+                <ValidationError
+                    errors={state.errors}
+                />
             </div>
         </form>
     )
