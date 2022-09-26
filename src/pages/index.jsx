@@ -313,16 +313,19 @@ export default function Home({blogs}) {
                     <div className="mt-6 flex gap-6">
                         <SocialLink
                             href="https://www.linkedin.com/in/samantha-orciuoli"
+                            target="_blank"
                             aria-label="Follow on LinkedIn"
                             icon={LinkedInIcon}
                         />
                         <SocialLink
                             href="https://github.com/samantha-orciuoli"
+                            target="_blank"
                             aria-label="Follow on GitHub"
                             icon={GitHubIcon}
                         />
                         <SocialLink
                             href="https://twitter.com/sammychules"
+                            target="_blank"
                             aria-label="Follow on Twitter"
                             icon={TwitterIcon}
                         />
