@@ -298,7 +298,7 @@ export default function Home({blogs}) {
                 </title>
                 <meta
                     name="description"
-                    content="I’m Samantha, a software engineer, developer, and student based in New Jersey. I’m the founder of..."
+                    content="I’m Samantha, a software engineer, developer, and student."
                 />
             </Head>
             <Container className="mt-9">
@@ -307,7 +307,7 @@ export default function Home({blogs}) {
                         Samantha Orciuoli, software engineer, developer, and student.
                     </h1>
                     <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        I’m Samantha, a software engineer and developer. I’m currently working everyday to build
+                        I’m Samantha, a software engineer, developer, and student. I’m working everyday to build
                         technologies that make life easier and more enjoyable.
                     </p>
                     <div className="mt-6 flex gap-6">
