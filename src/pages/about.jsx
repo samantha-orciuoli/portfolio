@@ -65,11 +65,10 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 I’ve loved problem-solving and building for as long as I can remember.
-                I’ve always enjoyed figuring out complex issues and creating a solution to
-                problems. Believe it or not, at the young age of 15, I enjoyed soldering
+                Believe it or not, at the young age of 15, I enjoyed soldering
                 pipes and programming the sprinkler timer in my backyard with my parents.
-                As I got older, I realized I wanted a profession where I could solve problems
-                and build to help people in any way I could. I then discovered computer science
+                As I got older, I realized I wanted a profession where I could solve issues
+                and design a fix to help people in any way I could. I then discovered computer science
                 and realized this is what I wanted to do for the rest of my life.
 
               </p>
@@ -80,12 +79,11 @@ export default function About() {
                 online degrees and spending countless hours researching the best and upcoming technology.
                 I love how the technology field is constantly advancing, and it’s incredible to see all
                 the cool things we can do with it.
-
               </p>
               <p>
                 The sense of accomplishment I get when approaching real-world problems and finding a solution
                 is extremely gratifying. Even when my grandparents ask me to fix their email, I’m glad I can
-                help. I’m so excited to see what’s to come in the technology field and to grow alongside it.
+                help. I’m so excited to see what’s to come in the technology industry and to grow alongside it.
                 Learning something new every day is why being a developer is so rewarding.
 
               </p>
