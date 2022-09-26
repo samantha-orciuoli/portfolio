@@ -43,7 +43,7 @@ export default function Education() {
             <EducationSection title="Degrees">
                 <Appearance
                     href="https://www.cs.rutgers.edu/academics/undergraduate/cs-degrees/b-s-degree"
-                    taregt="_blank"
+                    target="_blank"
                     title="Bachelor of Science Degree in Computer Science with a Minor in Business Administration"
                     description="From Rutgers University, New Brunswick"
                     event="May 2023"
