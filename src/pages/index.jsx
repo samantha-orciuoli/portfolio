@@ -121,7 +121,7 @@ function MessageMe() {
         >
             <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
                 <MailIcon className="h-6 w-6 flex-none"/>
-                <span className="ml-3">Message Me</span>
+                <span className="ml-3">Contact Me</span>
             </h2>
             <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                 Send me a message and I&apos;ll get back to you as soon as I can!
@@ -307,10 +307,8 @@ export default function Home({blogs}) {
                         Samantha Orciuoli, software engineer, developer, and student.
                     </h1>
                     <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        I’m Samantha, a software engineer and developer based in New Jersey.
-                        I’m the founder and CEO of Planetaria, where we develop
-                        technologies that empower regular people to explore space on their
-                        own terms.
+                        I’m Samantha, a software engineer and developer. I’m currently working everyday to build
+                        technologies that make life easier and more enjoyable.
                     </p>
                     <div className="mt-6 flex gap-6">
                         <SocialLink
