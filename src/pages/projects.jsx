@@ -14,7 +14,6 @@ const projects = [
     description:
       'Creating technology to empower civilians to explore space on their own terms.',
     link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
   },
   {
     name: 'Animaginary',
