@@ -16,10 +16,6 @@ import logoNextjs from '@/images/photos/nextjs.png'
 import logoGoogleai from '@/images/photos/googleai.png'
 import logoVercel from '@/images/photos/vercel.png'
 import logoJavascript from '@/images/photos/javascript.png'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
 import {generateRssFeed} from '@/lib/generateRssFeed'
 import {getAllBlogs} from '@/lib/getAllBlogs'
 import {formatDate} from '@/lib/formatDate'
@@ -179,35 +175,22 @@ function MessageMe() {
 function Resume() {
     let resume = [
         {
-            company: 'Planetaria',
-            title: 'CEO',
-            logo: logoPlanetaria,
-            start: '2019',
+            company: 'SportsCare Institute Inc',
+            title: 'Business Systems Intern',
+            start: '2018',
             end: {
-                label: 'Present',
+                label: 'Current',
                 dateTime: new Date().getFullYear(),
             },
         },
         {
-            company: 'Airbnb',
-            title: 'Product Designer',
-            logo: logoAirbnb,
-            start: '2014',
-            end: '2019',
-        },
-        {
-            company: 'Facebook',
-            title: 'iOS Software Engineer',
-            logo: logoFacebook,
-            start: '2011',
-            end: '2014',
-        },
-        {
-            company: 'Starbucks',
-            title: 'Shift Supervisor',
-            logo: logoStarbucks,
-            start: '2008',
-            end: '2011',
+            company: 'QitoQuest',
+            title: 'Application Developer',
+            start: '2022',
+            end: {
+                label: 'Current',
+                dateTime: new Date().getFullYear(),
+            },
         },
     ]
 
@@ -220,10 +203,6 @@ function Resume() {
             <ol className="mt-6 space-y-4">
                 {resume.map((role, roleIndex) => (
                     <li key={roleIndex} className="flex gap-4">
-                        <div
-                            className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                            <Image src={role.logo} alt="" className="h-7 w-7" unoptimized/>
-                        </div>
                         <dl className="flex flex-auto flex-wrap gap-x-2">
                             <dt className="sr-only">Company</dt>
                             <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
@@ -253,7 +232,12 @@ function Resume() {
                     </li>
                 ))}
             </ol>
-            <Button href="#" variant="secondary" className="group mt-6 w-full">
+            <Button href="/public/samantha-orciuoli-resume.pdf"
+                    variant="secondary"
+                    className="group mt-6 w-full"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download>
                 Download CV
                 <ArrowDownIcon
                     className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50"/>
