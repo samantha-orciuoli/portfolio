@@ -232,7 +232,7 @@ function Resume() {
                     </li>
                 ))}
             </ol>
-            <Button href="/public/samantha-orciuoli-resume.pdf"
+            <Button href="https://softwaresammy.com/samantha-orciuoli-resume.pdf"
                     variant="secondary"
                     className="group mt-6 w-full"
                     target="_blank"
