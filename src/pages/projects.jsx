@@ -4,45 +4,51 @@ import Head from 'next/head'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Portfolio Website',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+        'My personal website www.softwaresammy.com built using JavaScript, Next.js, Vercel, Formspree, & Tailwind CSS',
+    link: { href: 'https://github.com/samantha-orciuoli/portfolio.git', label: 'github.com' },
+    logo: logoAnimaginary,
   },
   {
-    name: 'Animaginary',
+    name: 'Meme Generator',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
+      'A multimedia application to dynamically generate memes taking quotes from a variety of filetypes',
+    link: { href: 'https://github.com/samantha-orciuoli/intermediate_python.git', label: 'github.com'},
+    logo: logoAnimaginary,
+  },
+  {
+    name: 'Dog Breed Identifier',
+    description:
+      'AI project using a pre-trained image classifier to identify dog breeds',
     link: { href: '#', label: 'github.com' },
     logo: logoAnimaginary,
   },
   {
-    name: 'HelioStream',
+    name: 'Image Classification Application',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
+      'An AI application to train a deep learning model on a dataset of images, then use the trained model to classify images',
     link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+    logo: logoAnimaginary,
   },
   {
-    name: 'cosmOS',
+    name: 'Patient Tracker',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+        'Healthcare financial dashboard for physical therapy company built using Python, Django, and PostgreSQL',
+    link: { href: 'https://github.com/samantha-orciuoli', label: 'github.com' },
+    logo: logoAnimaginary,
   },
   {
-    name: 'OpenShuttle',
+    name: 'NFT Minting App and Crypto Project',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+        'NFT web application for a Web3 company built using JavaScript, Next.js, Vercel, and Moralis',
+    link: { href: 'https://github.com/samantha-orciuoli', label: 'github.com' },
+    logo: logoAnimaginary,
   },
+
 ]
 
 function LinkIcon(props) {
@@ -67,8 +73,8 @@ export default function Projects() {
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="Projects I’ve been working on to solve real-world problems"
+        intro="I’ve worked on tons of projects, but these are the ones that I’m most proud of."
       >
         <ul
           role="list"
@@ -85,7 +91,7 @@ export default function Projects() {
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link href={project.link.href} target="_blank">{project.name} </Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
