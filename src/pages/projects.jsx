@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
+import codeImg from '@/images/logos/code.svg'
 
 const projects = [
   {
@@ -11,42 +11,42 @@ const projects = [
     description:
         'My personal website www.softwaresammy.com built using JavaScript, Next.js, Vercel, Formspree, & Tailwind CSS',
     link: { href: 'https://github.com/samantha-orciuoli/portfolio.git', label: 'github.com' },
-    logo: logoAnimaginary,
+    logo: codeImg,
   },
   {
     name: 'Meme Generator',
     description:
       'A multimedia application to dynamically generate memes taking quotes from a variety of filetypes',
     link: { href: 'https://github.com/samantha-orciuoli/intermediate_python.git', label: 'github.com'},
-    logo: logoAnimaginary,
+    logo: codeImg,
   },
   {
     name: 'Dog Breed Identifier',
     description:
       'AI project using a pre-trained image classifier to identify dog breeds',
     link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+    logo: codeImg,
   },
   {
     name: 'Image Classification Application',
     description:
       'An AI application to train a deep learning model on a dataset of images, then use the trained model to classify images',
     link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+    logo: codeImg,
   },
   {
     name: 'Patient Tracker',
     description:
         'Healthcare financial dashboard for physical therapy company built using Python, Django, and PostgreSQL',
     link: { href: 'https://github.com/samantha-orciuoli', label: 'github.com' },
-    logo: logoAnimaginary,
+    logo: codeImg,
   },
   {
     name: 'NFT Minting App and Crypto Project',
     description:
         'NFT web application for a Web3 company built using JavaScript, Next.js, Vercel, and Moralis',
     link: { href: 'https://github.com/samantha-orciuoli', label: 'github.com' },
-    logo: logoAnimaginary,
+    logo: codeImg,
   },
 
 ]
