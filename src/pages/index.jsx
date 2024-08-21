@@ -177,7 +177,7 @@ function Resume() {
         {
             company: 'Novartis',
             title: 'Data Architect and Mining Intern, Group Lead',
-            start: '2024',
+            start: 'Jun 2024 - Aug 2024',
             end: {
                 label: 'Current',
                 dateTime: new Date().getFullYear(),
