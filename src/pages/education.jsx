@@ -58,6 +58,13 @@ export default function Education() {
             </EducationSection>
             <EducationSection title="Certificates">
                 <Appearance
+                    href="https://coursera.org/share/12e5ecf5b588c9040bf484281b66cd3d"
+                    title="Introduction to Git and GitHub - Google"
+                    description="This course provides the skills to manage and track code versions with Git, collaborate on projects using GitHub, and build a professional portfolio through essential version control techniques."
+                    event="Completed March 18, 2024"
+                    cta="View Certificate"
+                />
+                <Appearance
                   href="https://confirm.udacity.com/ZHGCAMPW"
                   title="AI Programming with Python Nanodegree - Udacity"
                   description="A 3 month course exploring Python, NumPy, pandas, Matplotlib, PyTorch, Calculus, and Linear Algebra in order to build neural networks."
@@ -67,7 +74,7 @@ export default function Education() {
                 <Appearance
                   href="https://confirm.udacity.com/WDHJR72W"
                   title="Intermediate Python Nanodegree - Udacity"
-                  description="A 2 month course covering advanced python topics and large codebases with libraries.."
+                  description="A 2 month course covering advanced python topics and large codebases with libraries."
                   event="Completed July 14, 2022"
                   cta="View Certificate"
                 />
