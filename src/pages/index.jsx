@@ -184,7 +184,7 @@ function Resume() {
             },
         },
         {
-            company: 'QitoQuest',
+            company: 'GitoQuest',
             title: 'Application Developer',
             start: '2022',
             end: {

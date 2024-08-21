@@ -42,6 +42,13 @@ export default function Education() {
         <div className="space-y-20">
             <EducationSection title="Degrees">
                 <Appearance
+                    href="https://confirm.udacity.com/WDHJR72W"
+                    title="Master of Science in Artificial Intelligence"
+                    description="From the University of Texas at Austin"
+                    event="Aug 2026"
+                    cta="View Degree Requirements"
+                />
+                <Appearance
                     href="https://www.cs.rutgers.edu/academics/undergraduate/cs-degrees/b-s-degree"
                     title="Bachelor of Science Degree in Computer Science with a Minor in Business Administration"
                     description="From Rutgers University, New Brunswick"
