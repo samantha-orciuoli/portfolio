@@ -98,9 +98,6 @@ export default function About() {
               <SocialLink href="https://github.com/samantha-orciuoli" icon={GitHubIcon} className="mt-4">
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="https://twitter.com/sammychules" icon={TwitterIcon} className="mt-4">
-                Follow on Twitter
-              </SocialLink>
               <SocialLink
                 href="mailto:samantha.orciuoli@gmail.com"
                 icon={MailIcon}

@@ -42,7 +42,7 @@ export default function Education() {
         <div className="space-y-20">
             <EducationSection title="Degrees">
                 <Appearance
-                    href="https://confirm.udacity.com/WDHJR72W"
+                    href="https://cdso.utexas.edu/msai"
                     title="Master of Science in Artificial Intelligence"
                     description="From the University of Texas at Austin"
                     event="Aug 2026"

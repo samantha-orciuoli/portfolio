@@ -307,12 +307,6 @@ export default function Home({blogs}) {
                             aria-label="Follow on GitHub"
                             icon={GitHubIcon}
                         />
-                        <SocialLink
-                            href="https://twitter.com/sammychules"
-                            target="_blank"
-                            aria-label="Follow on Twitter"
-                            icon={TwitterIcon}
-                        />
                     </div>
                 </div>
             </Container>
