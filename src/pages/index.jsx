@@ -175,9 +175,9 @@ function MessageMe() {
 function Resume() {
     let resume = [
         {
-            company: 'SportsCare Institute Inc',
-            title: 'Business Systems Intern',
-            start: '2018',
+            company: 'Novartis',
+            title: 'Data Architect and Mining Intern, Group Lead',
+            start: '2024',
             end: {
                 label: 'Current',
                 dateTime: new Date().getFullYear(),
