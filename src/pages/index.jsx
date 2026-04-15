@@ -175,20 +175,11 @@ function MessageMe() {
 function Resume() {
     let resume = [
         {
-            company: 'Novartis',
-            title: 'Data Architect and Mining Intern, Group Lead',
-            start: 'Jun 2024',
+            company: 'Unanet',
+            title: 'Mid-Level AI Engineer',
+            start: '2024',
             end: {
-                label: 'Aug 2024',
-                dateTime: new Date().getFullYear(),
-            },
-        },
-        {
-            company: 'GitoQuest',
-            title: 'Application Developer',
-            start: '2022',
-            end: {
-                label: 'Current',
+                label: 'Present',
                 dateTime: new Date().getFullYear(),
             },
         },
