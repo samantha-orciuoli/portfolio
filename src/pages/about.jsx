@@ -98,13 +98,6 @@ export default function About() {
               <SocialLink href="https://github.com/samantha-orciuoli" icon={GitHubIcon} className="mt-4">
                 Follow on GitHub
               </SocialLink>
-              <SocialLink
-                href="mailto:samantha.orciuoli@gmail.com"
-                icon={MailIcon}
-                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-              >
-                samantha.orciuoli@gmail.com
-              </SocialLink>
             </ul>
           </div>
         </div>
